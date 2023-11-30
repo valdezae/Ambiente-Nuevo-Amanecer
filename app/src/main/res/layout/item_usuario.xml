@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_user.xml -->
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/custom_bienvenida_button"
+    android:layout_margin="4dp"
+    android:orientation="horizontal"
+    android:minWidth="500dp">
+
+    <TextView
+        android:id="@+id/nombreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="Nombre"
+        android:textSize="50sp"
+        android:fontFamily="@font/basefont"
+        android:textStyle="bold"
+        android:textColor="@drawable/button_text"
+        android:padding="3dp"/>
+    <TextView
+        android:id="@+id/apellidoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="Apellido"
+        android:textSize="50sp"
+        android:fontFamily="@font/basefont"
+        android:textStyle="bold"
+        android:textColor="@drawable/button_text"
+        android:padding="3dp"/>
+
+</LinearLayout>
+</layout>

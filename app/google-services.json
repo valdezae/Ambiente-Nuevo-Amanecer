@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "833730231468",
+    "project_id": "reto-be130",
+    "storage_bucket": "reto-be130.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833730231468:android:faaa2084725d8a6ac67309",
+        "android_client_info": {
+          "package_name": "com.example.reto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833730231468-dfcvpr7c2u75e5vl21m29rr6tb50ps86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.reto",
+            "certificate_hash": "d4cac1dbc2a24b1e940e387a9f0e5271f30a4277"
+          }
+        },
+        {
+          "client_id": "833730231468-247ulgrdk7nqoiq89qbuhvjc4dbj5j4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDenMmkIGsx4OtkFxRbbRCFQPFI7uTnuDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833730231468-247ulgrdk7nqoiq89qbuhvjc4dbj5j4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.reto.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.reto.fragments.LoggedInFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_logged_in" >
+        <action
+            android:id="@+id/action_loginFragment_to_adminPanelFragment2"
+            app:destination="@id/adminPanelFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_nivelesFragment"
+            app:destination="@id/nivelesFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/adminPanelFragment"
+        android:name="com.example.reto.fragments.AdminPanelFragment"
+        android:label="fragment_admin_panel"
+        tools:layout="@layout/fragment_admin_panel" >
+        <action
+            android:id="@+id/action_adminPanelFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_adminPanelFragment_to_createChildUserFragment"
+            app:destination="@id/createChildUserFragment" />
+        <action
+            android:id="@+id/action_adminPanelFragment_to_childDetailsFragment"
+            app:destination="@id/childDetailsFragment" />
+        <action
+            android:id="@+id/action_adminPanelFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_adminPanelFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_adminPanelFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_adminPanelFragment_to_updateAlumnoFragment"
+            app:destination="@id/updateAlumnoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nivelesFragment"
+        android:name="com.example.reto.fragments.NivelesFragment"
+        android:label="fragment_niveles"
+        tools:layout="@layout/fragment_niveles" >
+        <action
+            android:id="@+id/action_nivelesFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_nivelesFragment_to_juego1Fragment"
+            app:destination="@id/juego1Fragment" />
+        <action
+            android:id="@+id/action_nivelesFragment_to_juego2Fragment"
+            app:destination="@id/juego2Fragment" />
+        <action
+            android:id="@+id/action_nivelesFragment_to_juego3Fragment"
+            app:destination="@id/juego3Fragment" />
+        <action
+            android:id="@+id/action_nivelesFragment_to_juego4Fragment"
+            app:destination="@id/juego4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/juego1Fragment"
+        android:name="com.example.reto.fragments.Juego1Fragment"
+        android:label="fragment_juego1"
+        tools:layout="@layout/fragment_juego1" >
+        <action
+            android:id="@+id/action_juego1Fragment_to_nivelesFragment"
+            app:destination="@id/nivelesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/juego2Fragment"
+        android:name="com.example.reto.fragments.Juego2Fragment"
+        android:label="fragment_juego2"
+        tools:layout="@layout/fragment_juego2" >
+        <action
+            android:id="@+id/action_juego2Fragment_to_nivelesFragment"
+            app:destination="@id/nivelesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/juego3Fragment"
+        android:name="com.example.reto.fragments.Juego3Fragment"
+        android:label="fragment_juego3"
+        tools:layout="@layout/fragment_juego3" >
+        <action
+            android:id="@+id/action_juego3Fragment_to_nivelesFragment"
+            app:destination="@id/nivelesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/juego4Fragment"
+        android:name="com.example.reto.fragments.Juego4Fragment"
+        android:label="fragment_juego4"
+        tools:layout="@layout/fragment_juego4" >
+        <action
+            android:id="@+id/action_juego4Fragment_to_nivelesFragment"
+            app:destination="@id/nivelesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.reto.fragments.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="com.example.reto.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment2_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_loginFragment2_to_adminPanelFragment"
+            app:destination="@id/adminPanelFragment">
+        </action>
+        <action
+            android:id="@+id/action_loginFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createChildUserFragment"
+        android:name="com.example.reto.fragments.CreateChildUserFragment"
+        android:label="fragment_create_child_user"
+        tools:layout="@layout/fragment_create_child_user" >
+        <action
+            android:id="@+id/action_createChildUserFragment_to_adminPanelFragment"
+            app:destination="@id/adminPanelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/childDetailsFragment"
+        android:name="com.example.reto.fragments.ChildDetailsFragment"
+        android:label="fragment_child_details"
+        tools:layout="@layout/fragment_child_details" >
+        <action
+            android:id="@+id/action_childDetailsFragment_to_adminPanelFragment"
+            app:destination="@id/adminPanelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.reto.fragments.UpdateFragment"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_adminPanelFragment2"
+            app:destination="@id/adminPanelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateAlumnoFragment"
+        android:name="com.example.reto.fragments.UpdateAlumnoFragment"
+        android:label="fragment_update_alumno"
+        tools:layout="@layout/fragment_update_alumno" >
+        <action
+            android:id="@+id/action_updateAlumnoFragment_to_adminPanelFragment"
+            app:destination="@id/adminPanelFragment" />
+        <action
+            android:id="@+id/action_updateAlumnoFragment_to_alumnoDetailsUpdateFragment"
+            app:destination="@id/alumnoDetailsUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/alumnoDetailsUpdateFragment"
+        android:name="com.example.reto.fragments.AlumnoDetailsUpdateFragment"
+        android:label="fragment_alumno_details_update"
+        tools:layout="@layout/fragment_alumno_details_update" >
+        <action
+            android:id="@+id/action_alumnoDetailsUpdateFragment_to_updateAlumnoFragment"
+            app:destination="@id/updateAlumnoFragment" />
+    </fragment>
+</navigation>

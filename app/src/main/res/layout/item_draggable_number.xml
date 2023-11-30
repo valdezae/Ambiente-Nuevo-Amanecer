@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_draggable_number.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="number"
+            type="String" />
+    </data>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{number}"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@drawable/rectangle_shape"
+        app:tooltipText="@{`Number ` + number}" />
+</layout>

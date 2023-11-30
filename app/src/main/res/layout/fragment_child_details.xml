@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_user.xml -->
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/custom_bienvenida_button"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_cd_Nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="Nombre"
+            android:fontFamily="@font/basefont"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cd_Apellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="Apellido"
+            android:fontFamily="@font/basefont"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cd_Edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="Edad"
+            android:fontFamily="@font/basefont"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cd_NivelCog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="Nivel Cognitivo"
+            android:fontFamily="@font/basefont"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cd_NivelMotriz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:text="Nivel Motriz"
+            android:fontFamily="@font/basefont"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_cd_NivelMinijuego"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/basefont"
+            android:text="Nivel Actual Minijuego"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cd_regresar"
+            android:background="@drawable/custom_bienvenida_button_alt"
+            android:fontFamily="@font/basefont"
+            android:textColor="@drawable/button_text"
+            android:textSize="50dp"
+            android:layout_width="174dp"
+            android:layout_height="60dp"
+            android:text="Regresar"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+
+
+    </LinearLayout>
+</layout>

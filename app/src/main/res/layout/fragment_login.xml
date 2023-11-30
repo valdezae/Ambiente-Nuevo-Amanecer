@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.SignUpFragment">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="37dp"
+            android:fontFamily="@font/basefont"
+            android:text="Ingresar"
+            android:textColor="@drawable/button_text"
+            android:textSize="80sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_input"
+            android:hint="Escribe tu nombre de usuario"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.322" />
+
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="275dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_input"
+            android:hint="Escribe tu contraseña"
+            android:inputType="textPassword"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.43" />
+
+        <Button
+            android:id="@+id/btn_ingresar"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:fontFamily="@font/basefont"
+            android:padding="20dp"
+            android:text="Ingresar"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text"
+            android:textSize="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.648" />
+
+        <Button
+            android:id="@+id/btn_login_regresar"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:background="@drawable/custom_bienvenida_button_alt"
+            android:fontFamily="@font/basefont"
+            android:padding="20dp"
+            android:text="Regresar"
+            android:textAllCaps="false"
+            android:textColor="@drawable/button_text"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.822" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

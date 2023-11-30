@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.Juego4Fragment">
+
+        <GridLayout
+            android:id="@+id/gridLayoutPhrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="7"
+            app:layout_constraintBottom_toTopOf="@+id/buttonClear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonPhrase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_bienvenida_button"
+            android:fontFamily="@font/basefont"
+            android:padding="20dp"
+            android:text="Leer frase"
+            android:textColor="@drawable/button_text"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toStartOf="@+id/buttonClear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayoutPhrase" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_bienvenida_button"
+            android:fontFamily="@font/basefont"
+            android:padding="20dp"
+            android:text="Limpiar frase"
+            android:textColor="@drawable/button_text"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayoutPhrase"
+            tools:layout_editor_absoluteY="115dp" />
+
+        <Button
+            android:id="@+id/btn_Juego_4_Regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_bienvenida_button"
+            android:fontFamily="@font/basefont"
+            android:padding="20dp"
+            android:text="Regresar"
+            android:textColor="@drawable/button_text"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonClear"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayoutPhrase">
+
+        </Button>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_Juego_4_Regresar">
+
+
+            <GridLayout
+                android:id="@+id/gridLayoutButtons"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:columnCount="3" />
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

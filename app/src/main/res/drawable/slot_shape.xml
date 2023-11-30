@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/slot_shape.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Define the appearance of the shape, such as color, border, etc. -->
+    <solid android:color="@android:color/white" />
+    <stroke
+        android:width="2dp"
+        android:color="@android:color/black" />
+</shape>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.Juego2Fragment">
+
+        <LinearLayout
+            android:id="@+id/topBanner"
+            android:layout_width="match_parent"
+            android:layout_height="571dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/backBtn"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_bienvenida_button"
+                android:fontFamily="@font/basefont"
+                android:text="Regresar"
+                android:textSize="40dp" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:layout_weight="1">
+
+
+
+            <View
+                android:id="@+id/dragViewSquare"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rectangle_shape"
+                android:layout_marginEnd="16dp"
+                android:tag="@id/llBottomSquare"/>
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/dragViewCircle"
+                android:background="@drawable/circle_shape"
+                android:layout_gravity="center"
+                android:tag="@id/llBottomCircle"/>
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/dragViewTriangle"
+                android:background="@drawable/triangle_shape"
+                android:layout_gravity="center"
+                android:tag="@id/llBottomTriangle"/>
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/dragViewStar"
+                android:background="@drawable/star_shape"
+                android:layout_gravity="center"
+                android:tag="@id/llBottomStar"/>
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/dragViewHeart"
+                android:background="@drawable/heart_shape"
+                android:layout_gravity="center"
+                android:tag="@id/llBottomHeart"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/llBottomStar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:tag="star">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/starSlot"
+                    android:background="@drawable/slot_star"
+                    android:layout_gravity="center"
+                    android:tag="@id/llBottomStar"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBottomSquare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/holo_green_light"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:tag="square">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/squareSlot"
+                    android:background="@drawable/slot_square"
+                    android:layout_gravity="center"
+                    android:tag="@id/llBottomSquare"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBottomHeart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:tag="heart">
+
+                <View
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/heartSlot"
+                    android:background="@drawable/slot_heart"
+                    android:layout_gravity="center"
+                    android:tag="@id/llBottomHeart"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBottomCircle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/holo_purple"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:tag="circle">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/circleSlot"
+                    android:background="@drawable/slot_circle"
+                    android:layout_gravity="center"
+                    android:tag="@id/llBottomCircle"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBottomTriangle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/holo_red_light"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:tag="triangle">
+
+                <View
+                    android:id="@+id/triangleSlot"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/slot_triangle"
+                    android:tag="@id/llBottomTriangle"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</layout>
+

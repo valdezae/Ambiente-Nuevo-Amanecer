@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.NivelesFragment"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="68dp">
+
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <TextView
+            android:id="@+id/textView_NivelesFrag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/basefont"
+            android:text="Elige un nivel"
+            android:textColor="@drawable/button_text"
+            android:textSize="100sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_nivel_1"
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:layout_marginTop="136dp"
+            android:background="@drawable/_3124485_sl_100420_36140_29"
+            android:fontFamily="@font/basefont"
+            android:text="Nivel 1"
+            android:textColor="@drawable/button_text"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_nivel_4"
+            android:layout_width="1218dp"
+            android:layout_height="138dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="604dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:fontFamily="@font/basefont"
+            android:text="Comunicador"
+            android:textColor="@drawable/button_text"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_nivel_2"
+            android:layout_width="1277dp"
+            android:layout_height="138dp"
+            android:layout_marginTop="320dp"
+            android:background="@drawable/_7680575_5891217"
+            android:fontFamily="@font/basefont"
+            android:text="Nivel 2"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_nivel_3"
+            android:layout_width="1277dp"
+            android:layout_height="138dp"
+            android:layout_marginTop="456dp"
+            android:background="@drawable/_7680575_5891217"
+            android:fontFamily="@font/basefont"
+            android:text="Nivel 3"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

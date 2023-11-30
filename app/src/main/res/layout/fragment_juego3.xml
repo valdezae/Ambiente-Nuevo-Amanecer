@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.mihir.drawingcanvas.drawingView
+        android:id="@+id/drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.mihir.drawingcanvas.drawingView>
+
+    <Button
+        android:id="@+id/btn_Juego_3_Regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/custom_bienvenida_button"
+        android:fontFamily="@font/basefont"
+        android:padding="20dp"
+        android:text="Regresar"
+        android:textColor="@drawable/button_text"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/drawing_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/undobtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/custom_bienvenida_button"
+        android:backgroundTint="#57b7f2"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/baseline_undo_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/redobtn"
+        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+
+    <ImageButton
+        android:id="@+id/redobtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_bienvenida_button"
+        android:backgroundTint="#57b7f2"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/baseline_redo_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/undobtn"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <ImageButton
+        android:id="@+id/clearbtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_bienvenida_button"
+        android:backgroundTint="#57b7f2"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/baseline_cleaning_services_24"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/eraserbtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/eraserbtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/custom_bienvenida_button"
+        android:backgroundTint="#57b7f2"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/baseline_ink_eraser_24"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toStartOf="@+id/clearbtn"
+        app:layout_constraintHorizontal_bias=".99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="170dp"
+        android:layout_height="500dp"
+        android:alignmentMode="alignMargins"
+        android:background="@drawable/custom_grid_bg"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:rowCount="6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/drawing_view"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="@+id/drawing_view"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_red"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:backgroundTint="@color/coloring_red" />
+
+        <Button
+            android:id="@+id/btn_orange"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:backgroundTint="@color/coloring_orange" />
+
+
+        <Button
+            android:id="@+id/btn_green"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:backgroundTint="@color/coloring_green" />
+
+        <Button
+            android:id="@+id/btn_yellow"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:backgroundTint="@color/coloring_yellow" />
+
+        <Button
+            android:id="@+id/btn_cyan"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:backgroundTint="@color/coloring_cyan" />
+
+        <Button
+            android:id="@+id/btn_blue"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:backgroundTint="@color/coloring_blue" />
+
+
+        <Button
+            android:id="@+id/btn_pink"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:backgroundTint="@color/coloring_pink" />
+
+        <Button
+            android:id="@+id/btn_purple"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:backgroundTint="@color/coloring_purple" />
+
+        <Button
+            android:id="@+id/btn_brown"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:backgroundTint="@color/coloring_brown" />
+
+        <Button
+            android:id="@+id/btn_black"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:backgroundTint="@color/coloring_black" />
+
+        <Button
+            android:id="@+id/btn_gray"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:backgroundTint="@color/coloring_gray" />
+
+        <Button
+            android:id="@+id/btn_white"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bienvenida_button"
+            android:backgroundTint="@color/coloring_white" />
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

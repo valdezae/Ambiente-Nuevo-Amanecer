@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Reto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prefs_file">com.example.reto.PREFERENCE_FILE_KEY</string>
+    <string name="default_web_client_id">833730231468-dfcvpr7c2u75e5vl21m29rr6tb50ps86.apps.googleusercontent.com</string>
+
+    <string name="facebook_app_id">350361997586244</string>
+    <string name="fb_login_protocol_scheme">fb350361997586244</string>
+    <string name="facebook_client_token">56789</string>
+
+
+</resources>
